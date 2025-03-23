@@ -6,21 +6,26 @@ const UserInput = ({ InitialValue, handleChange }) => {
       <div className="input-group">
         <p>
           <label>Initial investments</label>
-          <input value={InitialValue} onChange={handleChange} type="number" />
+          <input
+            value={InitialValue}
+            onChange={handleChange}
+            type="number"
+            required
+          />
         </p>
         <p>
           <label>Annual investments</label>
-          <input type="number" />
+          <input type="number" required />
         </p>
       </div>
       <div className="input-group">
         <p>
           <label>expected return</label>
-          <input type="number" />
+          <input type="number" required />
         </p>
         <p>
           <label>duration</label>
-          <input type="number" />
+          <input type="number" required />
         </p>
       </div>
     </section>
