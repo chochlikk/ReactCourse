@@ -1,16 +1,17 @@
 import React from "react";
 import "./UserInput.css";
-const UserInput = ({ InitialValue, handleChange }) => {
+
+const UserInput = ({ InvestmentValue, handleChange }) => {
   return (
     <section id="user-input">
       <div className="input-group">
         <p>
           <label>Initial investments</label>
           <input
-            value={InitialValue}
-            onChange={handleChange}
             type="number"
             required
+            onChange={handleChange}
+            value={InvestmentValue}
           />
         </p>
         <p>

@@ -3,18 +3,19 @@ import UserInput from "./components/UserInput.jsx";
 import Result from "./components/Result.jsx";
 import { useState } from "react";
 function App() {
-  const [InitialInvestment, setInitialInvestment] = useState(0);
-  const handleChange = (e) => {
-    setInitialInvestment(e.target.value);
-  };
+  const [InvestmentValue, setInvestmentValue] = useState(0);
+
+  function handleChange(e) {
+    setInvestmentValue(e.target.value);
+  }
   return (
     <>
       <Header></Header>
       <UserInput
-        InitialInvestment={InitialInvestment}
+        InvestmentValue={InvestmentValue}
         handleChange={handleChange}
       />
-      <Result InitialInvestment={InitialInvestment}></Result>
+      <Result InvestmentValue={InvestmentValue}></Result>
     </>
   );
 }

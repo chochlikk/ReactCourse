@@ -1,7 +1,7 @@
 import React from "react";
 import "./Result.css";
 
-const Result = ({ InitialInvestment }) => {
+const Result = ({ InvestmentValue }) => {
   return (
     <table id="result">
       <thead>
@@ -16,7 +16,7 @@ const Result = ({ InitialInvestment }) => {
       <tbody>
         <tr className="center">
           <td>1</td>
-          <td>{InitialInvestment}</td>
+          <td>{InvestmentValue}</td>
         </tr>
       </tbody>
     </table>
